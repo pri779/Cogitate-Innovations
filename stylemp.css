@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Adjust based on header height */
+}
+html, body {
+    overflow-x: hidden; /* Hide horizontal scroll */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color:  #3C56FF;
+  background: white;
+}
+
+/* Home Section Styles */
+#home {
+color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 90px;
+    background:#FAFAFA; /* Light background */
+opacity:10px;
+}
+
+/* Image Container */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 80%; /* Control image width */
+    height: 600; /* Adjust height automatically */
+    border-radius: 10px; /* Smooth edges */
+}
+
+/* Content Section */
+.content {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    opacity: 0; /* Initially hidden */
+    animation: slideIn 2s forwards ease-in-out;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0343A4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #3C56FF;
+    color: white;
+}
+
+/* Keyframes for Text Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+#home h3{   color:  #0343A4;}
+#home h2{   color:  #0343A4;;}
+#home p {
+    font-size: 14px; /* If there's any paragraph text, you can also reduce its size here */
+    color:  black;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1d1d1d;
+    color: #3C56FF;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FAFAFC;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color:  #3C56FF;
+}
+
+/* Section */
+.section {
+    padding: 100px 20px;
+    min-height: 80vh;
+    text-align: center;
+  background: white;
+}
+/* About Section */
+
+/* About Section */
+#about {
+    color: black;
+    display: flex;
+    align-items: center; /* Aligns content vertically */
+    justify-content: space-between; /* Text left, image right */
+    padding: 100px 10%; /* Increased padding for more space */
+    gap: 40px; /* Space between text and image */
+    min-height: 600px; /* Increased section height */
+}
+
+/* Content - Left Side */
+#about-content {
+ color: #666;
+    max-width: 50%; /* Limits width */
+    text-align: left; /* Aligns text to the left */
+color:black;
+}
+
+/* Image - Right Side */
+.image-container {  
+    flex-shrink: 0; /* Prevents shrinking */
+    width: 50%; /* Ensures proper width */
+    text-align: right; /* Aligns the image */
+}
+
+.image-container img {
+    width: 100% !important; /* Forces full width */
+    height: auto;
+    display: block;
+}
+
+
+
+.contact-section {
+    text-align: center;
+    padding: 60px 10%;
+    background: #f4f4f4;
+    min-height: 250px;
+    }
+
+.contact-section h2 {
+text-align:center;
+    font-size: 28px;
+    color: black;
+    margin-bottom: 40px;
+    scroll-margin-top: 80px; /* Ensures it is fully visible */
+}
+
+.contact-section p {
+text-align:center;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+/* Contact container */
+.contact-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+background-color:white;
+}
+
+.contact-info, .contact-form {
+text-align:center;
+    flex: 1;background: rgba(248, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3, .contact-form h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+color:black;
+}
+
+.contact-info h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+
+.section {
+color:black;
+margin-bottom: 20px; 
+    background: #FAFAFA;
+    padding: 50px 0; /* Adjust padding for better spacing */
+}
+
+
+
+footer {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 60px 10%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #5080e3;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #92b0ee;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #5080e3;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    font-size: 14px;
+}
+/* Scroll to Top Button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden initially */
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect */
+#scrollTopBtn:hover {
+    background-color:#5080e3;
+    transform: scale(1.1);
+}
+#register {
+    background: white; /* Light background */
+    height: 600px; /* Fixed height */
+    display: flex;
+    align-items: center; /* Align items in center */
+    justify-content: center;
+    padding: 0 10%;
+    gap: 40px; /* Space between image and content */
+}
+
+.register-image {
+    flex: 1; /* Takes equal space */
+    display: flex;
+    justify-content: center;
+}
+
+.register-image img {
+    width: 100%; /* Responsive image */
+    max-width: 500px; /* Limit max size */
+}
+
+.register-content {
+    flex: 1; /* Takes equal space */
+    text-align: left;
+}
+
+.register-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.register-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.register-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #0056b3;
+color:white;
+}
+
+@media (max-width: 768px) {
+    .register-section {
+        flex-direction: column; /* Stack on small screens */
+        text-align: center;
+    }
+
+    .register-image img {
+        max-width: 300px;
+    }
+
+    .register-content {
+        text-align: center;
+    }
+}
