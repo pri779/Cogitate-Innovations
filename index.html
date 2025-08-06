@@ -246,18 +246,26 @@
             overflow: hidden;
         }
         
-        /* Update the hero container styles */
+    /* Hero Section - Fixed alignment */
+#hero {
+    background: var(--hero-bg);
+    min-height: 100vh; /* Changed from height to min-height */
+    display: flex;
+    align-items: center;
+    padding: 100px 20px; /* Increased padding to account for header */
+    position: relative;
+    overflow: hidden;
+}
+
 .hero-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Added for better centering */
+    justify-content: space-between; /* Changed from center to space-between */
     gap: 50px;
     width: 100%;
-    min-height: 100vh; /* Ensure full viewport height */
-    padding: 80px 0; /* Added padding to prevent cutting off */
+    margin: 0 auto; /* Ensure centering */
 }
 
-/* Update the hero image styles */
 .hero-image {
     flex: 1;
     position: relative;
@@ -269,17 +277,14 @@
     transition: var(--transition);
     max-width: 500px;
     height: auto;
-    align-self: center; /* Explicit vertical alignment */
-    margin-top: 0; /* Reset any default margins */
+    margin: auto 0; /* Vertical alignment */
 }
 
-/* Update the hero content alignment */
 .hero-content {
     flex: 1;
     padding-left: 30px;
-    align-self: center; /* Ensure vertical centering */
-}
-        
+    margin: auto 0; /* Vertical alignment */
+}     
         
         .hero-image:hover {
             transform: perspective(1000px) rotateY(0deg);
